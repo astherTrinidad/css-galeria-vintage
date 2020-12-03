@@ -1,0 +1,70 @@
+html{
+	background-image: url('img/fondo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container{
+	display: block;
+	margin:auto;
+	width: 778px;
+	background-color: pink;
+	margin-top: 50px;
+}
+
+figure {
+	height: 250px;
+	width: 250px;
+	background-color: white;
+	padding: 10px 10px 50px 10px;
+	box-shadow: 5px -5px 5px rgba(0,0,0, 0.5);
+	margin-bottom: 10px;
+	float: left;
+}
+
+figure:nth-of-type(4n+1){
+	margin-top: -10px;
+	transform: rotate(-6deg);
+}
+
+
+figure:nth-of-type(4n+2){
+	margin-top: -10px;
+	margin-left: -40px;
+	transform: rotate(6deg);
+}
+
+figure:nth-of-type(4n+3){
+	margin-top: -10px;
+	transform: rotate(1deg);
+}
+
+figure:nth-of-type(4n+4){
+	margin-left: -40px;
+	margin-top: -10px;
+	transform: rotate(-11deg);
+}
+
+
+figure:hover:nth-of-type(odd) {
+	transform: scale(1.2) rotate(-20deg) ;
+	position: relative;
+	z-index: 5;
+}
+
+figure:hover:nth-of-type(even) {
+	transform: scale(1.2) rotate(20deg) ;
+	position: relative;
+	z-index: 5;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+}
+
+figcaption{
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 20px;
+}
